@@ -37,11 +37,11 @@ module BetterErrors
     # @param [Hash] env
     # @return [Array]
     def call(env)
-      if local_request? env
-        better_errors_call env
-      else
-        @app.call env
-      end
+      #if local_request? env
+      better_errors_call env
+      #else
+      #  @app.call env
+      #end
     end
     
   private
